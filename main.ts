@@ -86,21 +86,15 @@ game.onUpdate(function () {
     }
     lastX = browserEvents.mouseX() + 1
     lastY = browserEvents.mouseY() + 1
-    // let input = imageToInput(imgBuf)
-    // let prediction = predict(input)
-    // console.log(prediction)
-    // mySprite.sayText(prediction)
-
-
-})
-
-game.onUpdateInterval(5000, function() {
     let newImg = downscaleImage(imgBuf)
     let input = imageToInput(newImg)
     let prediction = predict(input)
     wizardSprite.sayText(items[prediction])
 
+
 })
+
+
 
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     let newImg = downscaleImage(imgBuf)
