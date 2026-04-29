@@ -1,0 +1,26 @@
+{
+    "name": "Quick, Draw!",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "browser-events": "*",
+        "arcade-mini-menu": "github:riknoll/arcade-mini-menu#v0.1.0"
+    },
+    "files": [
+        "main.ts",
+        "README.md",
+        "assets.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "4.0.14",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "tsprj",
+    "languageRestriction": "javascript-only"
+}
